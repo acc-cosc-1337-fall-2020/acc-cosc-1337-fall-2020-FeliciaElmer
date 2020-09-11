@@ -2,11 +2,17 @@
 #include "catch.hpp"
 #include "types.h"
 
-TEST_CASE("Verify Test Configuration", "verification") {
+TEST_CASE("Verify Test Configuration", "verification"){
 	REQUIRE(true == true);
 }
 
 TEST_CASE("Test sum_numbers function") 
 {
 	REQUIRE(sum_numbers(5, 5) == 10);
+}
+
+TEST_CASE("Test multiply numbers")
+{
+  REQUIRE(multiply_numbers(2) == 10);
+  REQUIRE(multiply_numbers(10) == 50);
 }
