@@ -37,47 +37,29 @@ std:: string get_letter_grade_using_switch(int grade)
 {
   std::string letter_grade_switch;
 
-  switch(grade)
+  switch(grade/10)
   {
   case 0:
     letter_grade_switch = "F";
-    break;
-
-  case 10:
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
     letter_grade_switch = "F";
     break;
-
-  case 20:
-    letter_grade_switch = "F";
-    break;
-
-  case 30:
-    letter_grade_switch = "F";
-    break;
-
-  case 40:
-    letter_grade_switch = "F";
-    break;
-
-  case 50:
-    letter_grade_switch = "F";
-    break;
-
-  case 60:
+  case 6:
     letter_grade_switch = "D";
     break;
-  
-  case 70:
+  case 7:
     letter_grade_switch = "C";
     break;
 
-  case 80:
+  case 8:
     letter_grade_switch = "B";
     break;
 
-  case 90:
-    letter_grade_switch = "A";
-    break;
+  case 9:
 
   case 100:
     letter_grade_switch = "A";
