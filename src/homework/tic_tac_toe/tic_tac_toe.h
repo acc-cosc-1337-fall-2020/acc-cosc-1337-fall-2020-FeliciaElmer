@@ -24,5 +24,5 @@ class TicTacToe
     void clear_board();
     string player;
     vector<string> pegs{9," "};
-}
+};
 #endif
